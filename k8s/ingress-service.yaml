@@ -12,7 +12,7 @@ spec:
     - hosts:
         - vertliba.ru
         - www.vertliba.ru
-      secretName: k8s-multi-com
+      secretName: vertliba.ru
   rules:
     - host: vertliba.ru
       http:
