@@ -20,7 +20,7 @@ before_install:
   - gcloud auth activate-service-account --key-file service-account.json
   - gcloud config set project multi-kuber
   - gcloud config set compute/zone europe-west4-b
-  - gcloud container clusters get-credentials k2cluster
+  - gcloud container clusters get-credentials cluster-1
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   # - docker pull vvyacheslav/react-test:latest
   # - docker build -t vvyacheslav/react-test -f ./client/Dockerfile.dev ./client
